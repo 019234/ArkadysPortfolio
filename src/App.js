@@ -47,7 +47,6 @@ const scrollToSection = (id) => {
       behavior: 'smooth'
     });
   } else {
-    // Normal section scrolling for others
     const element = document.getElementById(id);
     if (element) {
       const headerOffset = 80;
