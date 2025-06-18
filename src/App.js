@@ -41,7 +41,7 @@ export default function App() {
 
 const scrollToSection = (id) => {
   if (id === 'about') {
-    // Scroll to top for About link
+    // Scroll to top for About linkasd asd asdasd
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -80,7 +80,7 @@ const scrollToSection = (id) => {
   return (
     <div className={`min-h-screen transition-colors duration-700 ${darkMode ? 'dark bg-gray-900 text-white ' : 'bg-white text-gray-900'}`}>
       <header className="p-4 flex justify-between items-center border-b border-gray-300 dark:border-gray-700 sticky top-0 z-50 bg-inherit">
-        <img src="/files/icon.png" alt="Logo" className="w-13 h-12 ml-2 md:ml-5" />
+        <img src="/files/Icon.png" alt="Logo" className="w-13 h-12 ml-2 md:ml-5" />
 
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center">
@@ -213,10 +213,10 @@ const scrollToSection = (id) => {
         </div>
       )}
 
-      <div className="px-4 md:px-64 py-10 md:py-20 md:pl-56 md:mr-64">
-        <section id="hero" className="md:fixed md:top-1/4 md:left-[120px] mt-6">
+      <div className="px-4 md:px-64 py-10 md:py-20 md:pl-56 md:mr-64 ">
+        <section id="hero" className="md:fixed md:top-1/4 md:left-[120px] mt-6 ">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-35">Hi, I am</h2>
-          <h2 className="text-5xl md:text-8xl font-bold mb-2 w-full max-w-1xl">Arkady Trinidad</h2>
+          <h2 className="text-5xl md:text-8xl font-bold mb-2 w-full ">Arkady Trinidad</h2>
           <p className="py-4 md:py-6 text-lg md:text-xl font-bold">Web developer / Game Director / 3D modeller</p>
           <div className="md:fixed w-full md:w-1/2 h-1/2">
             <section id="splineBox" className="relative md:absolute top-0 md:top-[-5rem] left-0 md:left-[-5rem] w-full md:w-[80%] h-64 md:h-full scale-100 md:scale-[1.3] z-10">
