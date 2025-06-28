@@ -39,28 +39,27 @@ export default function App() {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-const scrollToSection = (id) => {
-  if (id === 'about') {
-    // Scroll to top for About linkasd asd asdasd
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  } else {
-    const element = document.getElementById(id);
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
+  const scrollToSection = (id) => {
+    if (id === 'about') {
       window.scrollTo({
-        top: offsetPosition,
+        top: 0,
         behavior: 'smooth'
       });
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
     }
-  }
-  setIsMenuOpen(false);
-};
+    setIsMenuOpen(false);
+  };
 
 
   useEffect(() => {
@@ -69,7 +68,7 @@ const scrollToSection = (id) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const phoneNumber = '0917-123-4567';
+  const phoneNumber = '09766329574';
   const email = 'arkadytrinidad747@gmail.com';
 
   const toggleMenu = () => {
@@ -108,40 +107,36 @@ const scrollToSection = (id) => {
 
         <div className="hidden md:flex max-w-screen-xl flex-wrap items-center justify-between ml-auto p-4">
           <ul
-            className={`transition-colors duration-700 font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ${
-              darkMode
+            className={`transition-colors duration-700 font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ${darkMode
                 ? "bg-gray-800 border-gray-700 md:bg-gray-900 text-white"
                 : "bg-gray-50 border-gray-100 md:bg-white text-gray-900"}`}>
-           <li>
-             <button
-               onClick={() => scrollToSection('about')}
-               className={`block py-2 px-3 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 hover:bg-gray-100 w-full text-left ${
-                 darkMode ? "text-white hover:bg-gray-700 hover:text-white md:hover:text-blue-500" : "text-gray-900 md:hover:text-black-500"
-               }`}
-             >
-               About
-             </button>
-           </li>
-           <li>
-             <button
-               onClick={() => scrollToSection('projects')}
-               className={`block py-2 px-3 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 hover:bg-gray-100 w-full text-left ${
-                darkMode ? "text-white hover:bg-gray-700 hover:text-white md:hover:text-blue-500" : "text-gray-900 md:hover:text-black-500"
-                 }`}
-             >
-               Projects
-             </button>
-           </li>
-           <li>
-             <button
-               onClick={() => scrollToSection('academics')}
-               className={`block py-2 px-3 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 hover:bg-gray-100 w-full text-left ${
-                darkMode ? "text-white hover:bg-gray-700 hover:text-white md:hover:text-blue-500" : "text-gray-900 md:hover:text-black-500"
-                }`}
-             >
-               Academics
-             </button>
-           </li>
+            <li>
+              <button
+                onClick={() => scrollToSection('about')}
+                className={`block py-2 px-3 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 hover:bg-gray-100 w-full text-left ${darkMode ? "text-white hover:bg-gray-700 hover:text-white md:hover:text-blue-500" : "text-gray-900 md:hover:text-black-500"
+                  }`}
+              >
+                About
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => scrollToSection('projects')}
+                className={`block py-2 px-3 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 hover:bg-gray-100 w-full text-left ${darkMode ? "text-white hover:bg-gray-700 hover:text-white md:hover:text-blue-500" : "text-gray-900 md:hover:text-black-500"
+                  }`}
+              >
+                Projects
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => scrollToSection('academics')}
+                className={`block py-2 px-3 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 hover:bg-gray-100 w-full text-left ${darkMode ? "text-white hover:bg-gray-700 hover:text-white md:hover:text-blue-500" : "text-gray-900 md:hover:text-black-500"
+                  }`}
+              >
+                Academics
+              </button>
+            </li>
             <li>
               <a
                 href={Pdf} target="_blank" rel="noreferrer"
@@ -169,9 +164,8 @@ const scrollToSection = (id) => {
             <li>
               <a
                 href="#"
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  darkMode ? 'text-white hover:bg-gray-700' : 'text-gray-900 hover:bg-gray-200'
-                }`}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${darkMode ? 'text-white hover:bg-gray-700' : 'text-gray-900 hover:bg-gray-200'
+                  }`}
               >
                 About
               </a>
@@ -179,9 +173,8 @@ const scrollToSection = (id) => {
             <li>
               <a
                 href="#"
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  darkMode ? 'text-white hover:bg-gray-700' : 'text-gray-900 hover:bg-gray-200'
-                }`}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${darkMode ? 'text-white hover:bg-gray-700' : 'text-gray-900 hover:bg-gray-200'
+                  }`}
               >
                 Projects
               </a>
@@ -189,9 +182,8 @@ const scrollToSection = (id) => {
             <li>
               <a
                 href="#"
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  darkMode ? 'text-white hover:bg-gray-700' : 'text-gray-900 hover:bg-gray-200'
-                }`}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${darkMode ? 'text-white hover:bg-gray-700' : 'text-gray-900 hover:bg-gray-200'
+                  }`}
               >
                 Academics
               </a>
@@ -201,9 +193,8 @@ const scrollToSection = (id) => {
                 href={Pdf}
                 target="_blank"
                 rel="noreferrer"
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  darkMode ? 'text-white hover:bg-gray-700' : 'text-gray-900 hover:bg-gray-200'
-                }`}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${darkMode ? 'text-white hover:bg-gray-700' : 'text-gray-900 hover:bg-gray-200'
+                  }`}
               >
                 Resume
               </a>
@@ -219,13 +210,13 @@ const scrollToSection = (id) => {
           <p className="py-4 md:py-6 text-lg md:text-xl font-bold">Web developer / Game Director / 3D modeller</p>
           <div className="md:fixed w-full md:w-1/2 h-1/2">
             <section id="splineBox" className="relative md:absolute top-0 md:top-[-5rem] left-0 md:left-[-5rem] w-full md:w-[80%] h-64 md:h-full scale-100 md:scale-[1.3] z-10">
-              <Spline scene="https://prod.spline.design/GKKowBoUEGgKNwfG/scene.splinecode"/>
+              <Spline scene="https://prod.spline.design/GKKowBoUEGgKNwfG/scene.splinecode" />
             </section>
           </div>
         </section>
       </div>
 
-      <main  className="md:ml-[50%] flex-1 p-4 md:p-8 space-y-8 md:space-y-16">
+      <main className="md:ml-[50%] flex-1 p-4 md:p-8 space-y-8 md:space-y-16">
         <section id="about" className="mb-8 md:mb-16">
           <h3 className="text-2xl font-semibold mb-5"></h3>
 
@@ -266,48 +257,48 @@ const scrollToSection = (id) => {
                 </ExpandableCard>
               </div>
 
-          <div id="academics">
-           <MyAcads
-             title="Solo Physics Game project"
-             description="- Directed a short animated film for a final-year requirement"
-             description1="- Created concept, wrote narrative, modeled assets, and programmed core systems"
-             description2="- Showcased initiative, problem-solving, and multidisciplinary ability."
-             date="2023 - 2024"
-             />
+              <div id="academics">
+                <MyAcads
+                  title="Solo Physics Game project"
+                  description="- Directed a short animated film for a final-year requirement"
+                  description1="- Created concept, wrote narrative, modeled assets, and programmed core systems"
+                  description2="- Showcased initiative, problem-solving, and multidisciplinary ability."
+                  date="2023 - 2024"
+                />
 
-            <MyAcads
-              title="Director, Writer, modeler, and Programmer"
-              description="- Directed a first-person exploration game 2nd year project"
-              description1="- Led animation production, narrative writing, and gameplay programming."
-              description2="- Facilitated smooth collaboration between team members across roles"
-              date="2022-2023"
-              />
+                <MyAcads
+                  title="Director, Writer, modeler, and Programmer"
+                  description="- Directed a first-person exploration game 2nd year project"
+                  description1="- Led animation production, narrative writing, and gameplay programming."
+                  description2="- Facilitated smooth collaboration between team members across roles"
+                  date="2022-2023"
+                />
 
 
 
-             <MyAcads
-              title="Director, Writer and Lead Animator"
-              description="- Directed a short animated film for a final-year requirement"
-              description1="- Developed the story, led the creative vision, and managed the team throughout production."
-              description2="- Ensured delivery under deadlines while maintaining quality and team coordination."
-              date="2018 - 2019"
-              />
+                <MyAcads
+                  title="Director, Writer and Lead Animator"
+                  description="- Directed a short animated film for a final-year requirement"
+                  description1="- Developed the story, led the creative vision, and managed the team throughout production."
+                  description2="- Ensured delivery under deadlines while maintaining quality and team coordination."
+                  date="2018 - 2019"
+                />
 
-              <MyAcads
-              title="Achievements"
-              description="- Dean Lister For 2nd and 3rd Year"
-              description1="- Won most popular Game Project on 3 Year"
-              description2="- Led 5+ Game/Animation Projects Across 4 Academic Years"
-              date="2020 - 2025"
-              />
-          </div>
+                <MyAcads
+                  title="Achievements"
+                  description="- Dean Lister For 2nd and 3rd Year"
+                  description1="- Won most popular Game Project on 3 Year"
+                  description2="- Led 5+ Game/Animation Projects Across 4 Academic Years"
+                  date="2020 - 2025"
+                />
+              </div>
 
               <div className="w-full max-w-md mr-0 md:mr-10">
                 <span className="font-normal text-gray-700 dark:text-gray-400">Built with brains and caffeine —designed in <span className="font-semibold text-gray-900 dark:text-gray-100">figma</span> and coded in
-                <span className="font-semibold text-gray-900 dark:text-gray-100"> intelliJ</span>, powered by
-                <span className="font-semibold text-gray-900 dark:text-gray-100"> React.js</span>, styled with
-                <span className="font-semibold text-gray-900 dark:text-gray-100"> Tailwind CSS</span> and deployed with
-                <span className="font-semibold text-gray-900 dark:text-gray-100"> vercel.</span> coded by me.
+                  <span className="font-semibold text-gray-900 dark:text-gray-100"> intelliJ</span>, powered by
+                  <span className="font-semibold text-gray-900 dark:text-gray-100"> React.js</span>, styled with
+                  <span className="font-semibold text-gray-900 dark:text-gray-100"> Tailwind CSS</span> and deployed with
+                  <span className="font-semibold text-gray-900 dark:text-gray-100"> vercel.</span> coded by me.
                 </span>
               </div>
             </div>
