@@ -232,7 +232,7 @@ export default function App() {
         <section id="hero" className="md:fixed md:top-1/4 md:left-[100px] mt-6 ">
           <h2 className="text-[5vw] md:text-[clamp(1.3rem,2.4vw,7rem)] font-bold mb-1 w-full">Hi, I am</h2>
           <h2 className="text-[10vw] md:text-[clamp(2rem,5vw,12rem)] font-bold mb-2 w-full"> Arkady Trinidad </h2>
-          <p className="text-[clamp(0.7rem,1.5vw,2rem)] font-bold mb-2 w-full">Web developer / Multimedia Artist / Game Designer </p>
+          <p className="text-[clamp(0.7rem,1.5vw,2rem)] font-bold mb-2 w-full">Game Designer / Multimedia Artist / Web developer  </p>
           <div className="md:fixed w-full md:w-1/2 h-1/2">
             <section id="splineBox" className="relative md:absolute top-0 md:top-[-5rem] left-0 md:left-[-5rem] w-full md:w-[80%] h-64 md:h-full scale-100 md:scale-[1.3] z-10">
               <Spline scene="https://prod.spline.design/GKKowBoUEGgKNwfG/scene.splinecode" />
