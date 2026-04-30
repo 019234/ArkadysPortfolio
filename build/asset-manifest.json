@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b5e5ad3f.css",
+    "main.js": "/static/js/main.dca2a990.js",
+    "static/js/208.39a1bedd.chunk.js": "/static/js/208.39a1bedd.chunk.js",
+    "static/js/293.79f50ff6.chunk.js": "/static/js/293.79f50ff6.chunk.js",
+    "static/js/917.384cb218.chunk.js": "/static/js/917.384cb218.chunk.js",
+    "static/js/516.a6e946a0.chunk.js": "/static/js/516.a6e946a0.chunk.js",
+    "static/js/519.9008e87e.chunk.js": "/static/js/519.9008e87e.chunk.js",
+    "static/js/946.3bf501ec.chunk.js": "/static/js/946.3bf501ec.chunk.js",
+    "static/js/160.233e7a28.chunk.js": "/static/js/160.233e7a28.chunk.js",
+    "static/js/23.183605a3.chunk.js": "/static/js/23.183605a3.chunk.js",
+    "static/media/Arkady_Trinidad_Resume.pdf": "/static/media/Arkady_Trinidad_Resume.3280fda1b56d21ca9743.pdf",
+    "index.html": "/index.html",
+    "main.b5e5ad3f.css.map": "/static/css/main.b5e5ad3f.css.map",
+    "main.dca2a990.js.map": "/static/js/main.dca2a990.js.map",
+    "208.39a1bedd.chunk.js.map": "/static/js/208.39a1bedd.chunk.js.map",
+    "293.79f50ff6.chunk.js.map": "/static/js/293.79f50ff6.chunk.js.map",
+    "917.384cb218.chunk.js.map": "/static/js/917.384cb218.chunk.js.map",
+    "516.a6e946a0.chunk.js.map": "/static/js/516.a6e946a0.chunk.js.map",
+    "519.9008e87e.chunk.js.map": "/static/js/519.9008e87e.chunk.js.map",
+    "946.3bf501ec.chunk.js.map": "/static/js/946.3bf501ec.chunk.js.map",
+    "160.233e7a28.chunk.js.map": "/static/js/160.233e7a28.chunk.js.map",
+    "23.183605a3.chunk.js.map": "/static/js/23.183605a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5e5ad3f.css",
+    "static/js/main.dca2a990.js"
+  ]
+}
